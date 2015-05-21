@@ -1,3 +1,23 @@
-h1 {
-    color: aqua;
+#header {
+    background-color: #557782;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#sidebar {
+    background-color: #B8BCCB;
+    width: 100px;
+}
+
+#page {
+    width: 350px;
+    float: left;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    clear: both;
+    padding: 5px;
 }
