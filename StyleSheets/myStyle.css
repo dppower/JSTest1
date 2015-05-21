@@ -8,6 +8,7 @@
 #sidebar {
     background-color: #B8BCCB;
     width: 100px;
+    float: left;
 }
 
 #page {
