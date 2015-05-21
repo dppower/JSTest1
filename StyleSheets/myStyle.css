@@ -8,11 +8,13 @@
 #sidebar {
     background-color: #B8BCCB;
     width: 100px;
+    height: 400px;
     float: left;
 
 }
 
 #page {
+    padding-left: 20px;
     width: 350px;
     float: left;
 }
