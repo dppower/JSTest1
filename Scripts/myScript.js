@@ -1,6 +1,18 @@
-function myFunction()
+$(document).ready(function ()
 {
-    var x = document.getElementById("demo");
-    x.style.fontSize = "25px";
-    x.style.color = "red";
-}
+    var toggleState = true;
+
+    $("#toggle").click(function ()
+    {
+        if (toggleState)
+        {
+            $("#demo").css("color", "red");
+            $("#demo").css("font-size", "20px");
+            toggleState = false;
+        } else {
+            $("#demo").css("color", "");
+            $("#demo").css("font-size", "");
+            toggleState = true;
+        }
+    })
+})
