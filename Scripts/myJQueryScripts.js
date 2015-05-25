@@ -1,5 +1,13 @@
 $(document).ready(function () {
-    $("#redp").mouseover(function () {
+    function resetRedp(){
+        this.css(color, "");
+    }
+    $("#redp")
+    .mouseenter(function () {
         $(this).css("color", "red");
-    });  
+    })
+    .mouseleave(function(){
+        resetRedp();
+    })
+    );
 });
