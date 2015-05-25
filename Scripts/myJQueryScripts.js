@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#redp").mouseenter(function () {
+    $("#redp").mouseover(function () {
         $(this).css("color", "red");
     });  
 });
