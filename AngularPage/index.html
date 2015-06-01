@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en" ng-app="PhoneCatApp">
     <head>
+        <title>Test Page with Angular</title>
         <meta charset="utf-8" />
         <script src ="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src="app.js"></script>
         <link rel="stylesheet" href="../stylesheet/myStyle.css" />
     </head>
-    <body>
+    <body ng-controller="PhoneListCtrl">
         <div id="sidebar">
             <p>Search: <input ng-model="query"/></p>
             <p>Sort By: 
@@ -17,7 +19,12 @@
         </div>
 
         <div id="page">
-
+            <ul>
+                <li ng-repeat="phone in phones">
+                    <span>{{phone.name}}</span>
+                    <p>{{phone.snippet}}</p>
+                </li>
+            </ul>
         </div>
 
     </body>
