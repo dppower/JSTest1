@@ -2,7 +2,7 @@
 
 /* Register a new module called PhoneCatApp */
 
-var phoneCatApp = angular.module('PhoneCatApp', []);
+var PhoneCatApp = angular.module('PhoneCatApp', []);
 
 phoneCatApp.controller('PhoneListCtrl', function($scope)
 {
